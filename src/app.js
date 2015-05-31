@@ -22,13 +22,12 @@ ajax(
     console.log('Successfully fetched Space State!');
     var state = "";
     
-    if(data.open) {state = "open";}
+    if(data.open === true) {state = "open";}
     else if(data.open === false){state = "Closed";}
     else{state = "ERROR";}
 
     // show to user 
     card.subtitle(data.space);   
-    card.icon('tilogo');
     card.body("space is currently " + state);
   },
   
@@ -38,5 +37,3 @@ ajax(
   }
   
 );
-
-
