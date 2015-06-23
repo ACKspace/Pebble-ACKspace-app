@@ -10,6 +10,7 @@
         "media": [
             {
                 "file": "images/menu_icon.png",
+                "menuIcon": true,
                 "name": "IMAGE_MENU_ICON",
                 "type": "png"
             },
@@ -27,22 +28,6 @@
                 "file": "fonts/UbuntuMono-Regular.ttf",
                 "name": "MONO_FONT_14",
                 "type": "font"
-            },
-            {
-                "file": "images/ti.png",
-                "menuIcon": true,
-                "name": "IMAGES_TI_PNG",
-                "type": "png"
-            },
-            {
-                "file": "images/techinclogo_1.png",
-                "name": "IMAGES_TECHINCLOGO_1_PNG",
-                "type": "png"
-            },
-            {
-                "file": "images/techinclogo_0.png",
-                "name": "IMAGES_TECHINCLOGO_0_PNG",
-                "type": "png"
             }
         ]
     },

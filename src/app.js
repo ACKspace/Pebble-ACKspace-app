@@ -1,6 +1,6 @@
 var UI = require('ui');
 var ajax = require('ajax');
-var URL = 'http://ackspace.nl/status.php';
+var URL = 'https://ackspace.nl/status.php';
 
 // Create a Card with title and subtitle
 var card = new UI.Card({
