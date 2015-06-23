@@ -3,8 +3,8 @@
     "capabilities": [
         ""
     ],
-    "companyName": "m.frost@mattronix.nl",
-    "longName": "Techinc State",
+    "companyName": "Vicarious",
+    "longName": "ACKspace Status",
     "projectType": "pebblejs",
     "resources": {
         "media": [
@@ -47,8 +47,8 @@
         ]
     },
     "sdkVersion": "3",
-    "shortName": "Techinc State",
-    "uuid": "6c33ebaa-3751-434b-9ecf-79220d545a66",
+    "shortName": "ACKspace",
+    "uuid": "30779b90-6c99-4682-9887-10437f0f0fbf",
     "versionCode": 1,
     "versionLabel": "1.0",
     "watchapp": {
