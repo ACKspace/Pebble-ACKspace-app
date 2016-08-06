@@ -1,10 +1,10 @@
 var UI = require('ui');
 var ajax = require('ajax');
-var URL = 'https://ackspace.nl/status.php';
+var URL = 'https://ackspace.nl/spaceAPI/';
 
 // Create a Card with title and subtitle
 var card = new UI.Card({
-  title:'Hackerspace',
+  title:'ACKspace',
   subtitle:'Fetching...'
 });
 // Display the Card
@@ -36,13 +36,13 @@ ajax(
         var hour = a.getHours();
         var min = a.getMinutes();
         var sec = a.getSeconds();
-        var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+        var time = hour + ':' + min + ':' + sec + '\n' + date + ' ' + month + ' ' + year ;
         return time;
     }
 
     // show to user 
-    card.subtitle(data.space);   
-    card.body("Status: " + status + "\nChanged: " + timeConverter(data.state.lastchange));
+    card.subtitle("Status: " + status);   
+    card.body("Message: " + data.state.message + "\nChanged: " + timeConverter(data.state.lastchange));
   },
   
   function(error) {
