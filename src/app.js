@@ -34,8 +34,8 @@ ajax(
         var month = months[a.getMonth()];
         var date = a.getDate();
         var hour = a.getHours();
-        var min = a.getMinutes();
-        var sec = a.getSeconds();
+        var min = addLeadingZeroes(a.getMinutes());
+        var sec = addLeadingZeroes(a.getSeconds());
         var time = hour + ':' + min + ':' + sec + '\n' + date + ' ' + month + ' ' + year ;
         return time;
     }
@@ -51,3 +51,7 @@ ajax(
   }
   
 );
+
+function addLeadingZeroes(toCheck){
+  return ((String(toCheck).length < 2) ? '0' + toCheck : toCheck);
+}
