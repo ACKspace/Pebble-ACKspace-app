@@ -1,5 +1,6 @@
 var UI = require('ui');
 var ajax = require('ajax');
+var Accel = require('ui/accel');
 var URL = 'https://ack.space/spaceAPI';
 var status = '';
 var currentStatus = '';
@@ -48,6 +49,10 @@ function updateState(){
 }
 updateState();
 setInterval(updateState, 300000);
+
+Accel.on('tap', function(){
+  updateState();
+});
 
 function addLeadingZeroes(toCheck){
   return ((String(toCheck).length < 2) ? '0' + toCheck : toCheck);
