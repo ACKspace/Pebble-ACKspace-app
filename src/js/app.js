@@ -8,7 +8,12 @@ var currentStatus = '';
 // Create a Card with title and subtitle
 var card = new UI.Card({
   title:'Space State',
-  body:'Fetching...'
+  body:'Fetching...',
+  status: {
+    separator: 'none',
+    color: 'white',
+    backgroundColor: 'black'
+  }
 });
 // Display the Card
 card.show();
